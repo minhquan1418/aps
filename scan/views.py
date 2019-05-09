@@ -19,5 +19,21 @@ def scan(request):
     return JsonResponse(data)
 
 def connect(request):
-    data = {'success': True}
+    # lay cac param truyen vao
+    method = request.GET['metd']
+    ip = request.GET['ip']
+    # ket qua ket noi
+    isSuccess = True
+
+    if method == 'IP':
+        output_lines = subprocess.check_output(["sh", "tools/connect_to_device/connect_ip.sh", ip])
+        result = output_lines.splitlines()[-1]
+        if result == "1":
+            isSuccess = True
+        else:
+            isSuccess = False
+    else:
+        debug = 'usb connect'
+
+    data = {'success': isSuccess, 'debug': result}
     return JsonResponse(data)
