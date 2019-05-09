@@ -23,7 +23,7 @@
 <!-- Bootstrap -->
 <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
 
-<script src="{% static 'js/util.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/page/dashboard.js' %}" type="text/javascript"></script>
 {% endblock foot %}
 
 {% block content %}
@@ -33,14 +33,50 @@
         <div class="box box-primary">
             <div class="box-header">
                 <h3 class="box-title">
+                    Select connection method
+                </h3>
+                <div class="box-tools pull-left">
+                    <div class="btn-group" data-toggle="btn-toggle">
+                        <button id="btnMethod" type="button" class="btn btn-primary dropdown-toggle"
+                            data-toggle="dropdown">USB</button>
+                        <ul class="dropdown-menu">
+                            <li><a onclick="chooseMethod('USB')">USB</a></li>
+                            <li><a onclick="chooseMethod('IP')">IP</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" data-toggle="btn-toggle">
+                        <input id="btnIp" type="text" class="form-control" placeholder="IP" disabled>
+                    </div>
+                    <div class="btn-group" data-toggle="btn-toggle">
+                        <button type="button" class="btn btn-primary" onclick="doConect()">Connect</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-body">
+                <div id="divConnectSuccess" class="callout callout-info" style="display: none">
+                    <h4>Kết nối thành công</h4>
+                    <p>Có thể tiếp tục</p>
+                </div>
+                <div id="divConnectFail" class="callout callout-danger" style="display: none">
+                    <h4>Kết nối thất bại</h4>
+                    <p>Lý do: chưa cắm, chưa root,...</p>
+                </div>
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+</div>
+
+<div class="row" id="divPhoneInfo" style="display: none;">
+    <section class="col-lg-12">
+        <!-- Map box -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">
                     Phone Info
                 </h3>
             </div>
             <div class="box-body">
-                <div class="callout callout-danger">
-                    <h4>Kết nối thất bại</h4>
-                    <p>Lý do: chưa cắm, chưa root,...</p>
-                </div>
                 <table class="table table-bordered">
                     <tbody>
                         <tr>
@@ -63,8 +99,30 @@
                 </table>
             </div>
             <div class="box-footer">
-                <button class="btn btn-info" onclick="scan()"><i class="fa fa-download"></i>  Scan</button>
-                <button id="btnReport" class="btn btn-info" disabled><i class="fa fa-download"></i>  Report</button>
+                <button class="btn btn-info buttonload" onclick="scan()"><i class="fa fa-download"></i> Scan</button>
+            </div>
+        </div>
+        <!-- /.box -->
+    </section>
+</div>
+
+<div class="row" id="divReport" style="display: none;">
+    <section class="col-lg-12">
+        <!-- Map box -->
+        <div class="box box-primary">
+            <div class="box-header">
+                <h3 class="box-title">
+                    Report
+                </h3>
+            </div>
+            <div class="box-body">
+                <div class="callout callout-info">
+                    <h4>Kết nối thành công</h4>
+                    <p>Có thể tiếp tục</p>
+                </div>
+            </div>
+            <div class="box-footer">
+                <button id="btnReport" class="btn btn-info"><i class="fa fa-download"></i> Report</button>
             </div>
         </div>
         <!-- /.box -->

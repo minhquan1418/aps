@@ -3,5 +3,6 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='scan')
+    url(r'^$', views.scan, name='scan'),
+    url(r'^connect/$', views.connect, name='connect')
 ]
