@@ -1,0 +1,56 @@
+[
+  {
+    "schema": "cardWithCoverAndHorizontalList",
+    "uuid": "F47309B3-913D-4C0B-A608-9D14158CA3C9",
+    "slug": "lagery",
+    "content": {
+      "cta": {
+        "title": "Lagery",
+        "color": "#009900",
+        "deeplink": {
+          "uri": "/view/view-with-title-and-verticalGrid/promotions/lagery",
+          "schema": "viewWithCoverAndVerticalGrid"
+        }
+      },
+      "horizontalList": {
+        "schema": "collection",
+        "uuid": "F47309B3-913D-4C0B-A608-9D14158CA3C9",
+        "slug": "lagery-preview",
+        "content": {
+          "collectionType": "horizontalList",
+          "ref": {
+            "uri": "/collection/promotions/lagery-preview",
+            "childSchema": "promotion"
+          }
+        }
+      }
+    }
+  },
+  {
+    "schema": "cardWithCoverAndHorizontalList",
+    "uuid": "F47309B3-913D-4C0B-A608-9D14158CA3C9",
+    "slug": "smakowe-preview",
+    "content": {
+      "cta": {
+        "title": "Smakowe",
+        "color": "#009900",
+        "deeplink": {
+          "uri": "/view/view-with-title-and-verticalGrid/promotions/smakowe",
+          "schema": "viewWithCoverAndVerticalGrid"
+        }
+      },
+      "horizontalList": {
+        "schema": "collection",
+        "uuid": "F47309B3-913D-4C0B-A608-9D14158CA3C9",
+        "slug": "smakowe-preview",
+        "content": {
+          "collectionType": "horizontalList",
+          "ref": {
+            "uri": "/collection/promotions/smakowe-preview",
+            "childSchema": "promotion"
+          }
+        }
+      }
+    }
+  }
+]

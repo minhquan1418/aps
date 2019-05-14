@@ -1,0 +1,287 @@
+[
+  {
+    "schema": "coupon",
+    "uuid": "7726f41b-3176-4d30-b209-e88e9203ssded20",
+    "slug": "piwo-carlsberg",
+    "content": {
+      "name": "Piwo Carlsberg",
+      "type": "CUSTOM",
+      "discountUnit": "MULTIBUY",
+      "discountValue": 2,
+      "price": 500,
+      "startAt": "2018-09-21T00:35:11.000Z",
+      "expireAt": "2018-12-31T13:35:11.000Z",
+      "headline": null,
+      "description": "CARLSBERG! Bierz i pij",
+      "lastingAt": "2018-12-31T13:35:11.000Z",
+      "params": {
+        "unit": "g",
+        "unitValue": "128",
+        "gradient": "#ee8033"
+      },
+      "images": [
+        {
+          "type": "thumbnail",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        }
+      ],
+      "requireRedeemedPoints": 15,
+      "redeemQuantityPerActivation": 3,
+      "currentRedeemedQuantity": 1,
+      "currentRedeemLimit": 12,
+      "redeemLimitPerClient": 10,
+      "activationCounter": 4,
+      "status": "ASSIGNED",
+      "tags": [
+        {
+          "name": "Na szybko",
+          "priority": 1,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282183579-zrzut-ekranu-2018-09-18-o-16.45.07.png",
+          "color": "#CE1F65"
+        },
+        {
+          "name": "Bez laktozy",
+          "priority": 5,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282184071-zrzut-ekranu-2018-09-18-o-16.46.28.png",
+          "color": "#67478A"
+        }
+      ]
+    }
+  },
+  {
+    "schema": "coupon",
+    "uuid": "7726f41b-3176-4d30-b209-e88e9208ed28",
+    "slug": "piwo-okocim",
+    "content": {
+      "name": "Piwo Okocim",
+      "type": "CUSTOM",
+      "discountUnit": "MULTIBUY",
+      "discountValue": 4,
+      "price": 91050,
+      "startAt": "2018-09-21T00:35:11.000Z",
+      "expireAt": "2018-12-31T13:35:11.000Z",
+      "headline": null,
+      "description": "Piwo piwo piwo. Piwo. Cztery piwa. Ojebienie.",
+      "lastingAt": "2018-12-31T13:35:11.000Z",
+      "params": {
+        "unit": "g",
+        "unitValue": "128",
+        "gradient": "#ee8033"
+      },
+      "images": [
+        {
+          "type": "thumbnail",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        }
+      ],
+      "requireRedeemedPoints": 100,
+      "redeemQuantityPerActivation": 3,
+      "currentRedeemedQuantity": 1,
+      "currentRedeemLimit": 12,
+      "redeemLimitPerClient": 10,
+      "activationCounter": 4,
+      "status": "ACTIVE",
+      "tags": [
+        {
+          "name": "Na szybko",
+          "priority": 1,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282183579-zrzut-ekranu-2018-09-18-o-16.45.07.png",
+          "color": "#CE1F65"
+        },
+        {
+          "name": "Bez laktozy",
+          "priority": 5,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282184071-zrzut-ekranu-2018-09-18-o-16.46.28.png",
+          "color": "#67478A"
+        }
+      ]
+    }
+  },
+  {
+    "schema": "coupon",
+    "uuid": "7726f41b-3176-4d30-b209-e88e9208ed29",
+    "slug": "piwo-warka",
+    "content": {
+      "name": "Piwo Warka",
+      "type": "CUSTOM",
+      "discountUnit": "MULTIBUY",
+      "discountValue": 4,
+      "price": 1050,
+      "startAt": "2018-09-21T00:35:11.000Z",
+      "expireAt": "2018-12-31T13:35:11.000Z",
+      "headline": null,
+      "description": "Piwo piwo piwo. Piwo. Cztery piwa. Ojebienie.",
+      "lastingAt": "2018-12-31T13:35:11.000Z",
+      "params": {
+        "unit": "g",
+        "unitValue": "128",
+        "gradient": "#ee8033"
+      },
+      "images": [
+        {
+          "type": "thumbnail",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        }
+      ],
+      "requireRedeemedPoints": 2,
+      "redeemQuantityPerActivation": 3,
+      "currentRedeemedQuantity": 4,
+      "currentRedeemLimit": 18,
+      "redeemLimitPerClient": 24,
+      "activationCounter": 6,
+      "status": "ASSIGNED",
+      "tags": [
+        {
+          "name": "Na szybko",
+          "priority": 1,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282183579-zrzut-ekranu-2018-09-18-o-16.45.07.png",
+          "color": "#CE1F65"
+        },
+        {
+          "name": "Bez laktozy",
+          "priority": 5,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282184071-zrzut-ekranu-2018-09-18-o-16.46.28.png",
+          "color": "#67478A"
+        }
+      ]
+    }
+  },
+  {
+    "schema": "promotion",
+    "uuid": "7726f41b-3176-4d30-b209-e88e9208ed30",
+    "slug": "ciasteczka",
+    "content": {
+      "name": "Ciasteczka",
+      "type": "MEMBERS_ONLY",
+      "discountUnit": "MULTIBUY",
+      "discountValue": 4,
+      "price": 1050,
+      "startAt": "2018-09-21T00:35:11.000Z",
+      "expireAt": "2018-12-31T13:35:11.000Z",
+      "headline": null,
+      "description": "Ciasteczkowy potwór",
+      "lastingAt": "2018-12-31T13:35:11.000Z",
+      "params": {
+        "unit": "g",
+        "unitValue": "128",
+        "gradient": "#ee8033"
+      },
+      "images": [
+        {
+          "type": "thumbnail",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        }
+      ],
+      "requireRedeemedPoints": 2,
+      "redeemQuantityPerActivation": 3,
+      "currentRedeemedQuantity": 1,
+      "currentRedeemLimit": 12,
+      "redeemLimitPerClient": 10,
+      "activationCounter": 4,
+      "status": "ACTIVE",
+      "tags": [
+        {
+          "name": "Na szybko",
+          "priority": 1,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282183579-zrzut-ekranu-2018-09-18-o-16.45.07.png",
+          "color": "#CE1F65"
+        },
+        {
+          "name": "Bez laktozy",
+          "priority": 5,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282184071-zrzut-ekranu-2018-09-18-o-16.46.28.png",
+          "color": "#67478A"
+        }
+      ]
+    }
+  },
+  {
+    "schema": "promotion",
+    "uuid": "7726f41b-3176-4d30-b209-e88e9208ed31",
+    "slug": "lody",
+    "content": {
+      "name": "Lody dla wszystkich",
+      "type": "GENERAL",
+      "discountUnit": "MULTIBUY",
+      "discountValue": 4,
+      "price": 55555,
+      "startAt": "2018-09-21T00:35:11.000Z",
+      "expireAt": "2018-12-31T13:35:11.000Z",
+      "headline": null,
+      "description": "Zimne lody",
+      "lastingAt": "2018-12-31T13:35:11.000Z",
+      "params": {
+        "unit": "g",
+        "unitValue": "128",
+        "gradient": "#ee8033"
+      },
+      "images": [
+        {
+          "type": "thumbnail",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        },
+        {
+          "type": "image",
+          "url": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537457802430-delicje-toffe-128g.png"
+        }
+      ],
+      "requireRedeemedPoints": 2,
+      "redeemQuantityPerActivation": 3,
+      "currentRedeemedQuantity": 1,
+      "currentRedeemLimit": 12,
+      "redeemLimitPerClient": 10,
+      "activationCounter": 4,
+      "status": "ACTIVE",
+      "tags": [
+        {
+          "name": "Na szybko",
+          "priority": 1,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282183579-zrzut-ekranu-2018-09-18-o-16.45.07.png",
+          "color": "#CE1F65"
+        },
+        {
+          "name": "Bez laktozy",
+          "priority": 5,
+          "icon": "https://www.snrcdn.net/upload/9abd2c7869d1c01635cc6cb1bf4fd5adb8840a4f/default/origin/1537282184071-zrzut-ekranu-2018-09-18-o-16.46.28.png",
+          "color": "#67478A"
+        }
+      ]
+    }
+  }
+]

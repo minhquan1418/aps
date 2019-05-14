@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/rootView" android:background="@drawable/background_light_top_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/swipeLine" android:layout_marginTop="@dimen/spacing_sm" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Zabka.SwipeLine.Horizontal" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/scrollableContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@id/confirmButton" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="56.0dip" android:layout_marginStart="@dimen/base_screen_margin_lg" android:layout_marginEnd="@dimen/base_screen_margin_lg" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Zabka.Header" />
+            <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_xxl" android:paddingStart="@dimen/base_screen_margin_lg" android:paddingEnd="@dimen/base_screen_margin_lg" app:layout_constraintTop_toBottomOf="@id/title" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <View android:id="@id/loadingBackground" android:background="@color/background_light" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/confirmButton" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/confirmButton" />
+    <TextView android:id="@id/confirmButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" app:layout_constraintBottom_toBottomOf="parent" style="@style/Widget.Zabka.RectButton" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/confirmButton" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/confirmButton" />
+</android.support.constraint.ConstraintLayout>

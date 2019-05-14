@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="pl.zabka.apb2c" platformBuildVersionCode="82" platformBuildVersionName="1.0.0">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="false" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="pl.zabka.b2c.App" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="pl.zabka.b2c.presentation.welcome.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Zabka.LaunchScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pl.zabka.b2c.presentation.login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="pl.zabka.b2c.presentation.registration.EmailRegistrationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="pl.zabka.b2c.presentation.registration.FacebookRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="pl.zabka.b2c.presentation.resetpassword.newpassword.NewPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="aplikacja.zabka.pl" android:path="@string/reset_password_link_prefix" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="pl.zabka.b2c.presentation.dashboard.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.settings.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.shopsmap.ShopsMapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="pl.zabka.b2c.presentation.shopsmap.details.ShopDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.registration.terms.TermsAndConditionsDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.myprofile.UserProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.topnotification.TopNotificationActivity" android:theme="@style/Theme.Zabka.TopNotification"/>
+        <activity android:name="pl.zabka.b2c.presentation.dynamicdetails.DynamicDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Zabka.TransparentBar"/>
+        <activity android:name="pl.zabka.b2c.presentation.tutorial.TutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.terms.WebTermsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.myprofile.phone.PhoneVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="pl.zabka.b2c.presentation.myprofile.delete.SelectDeleteAccountReasonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.myprofile.delete.ConfirmDeleteAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.myprofile.delete.DeleteAccountCustomReasonActivity" android:screenOrientation="portrait"/>
+        <activity android:name="pl.zabka.b2c.presentation.popup.RegistrationPointsPopupActivity" android:theme="@style/Theme.Zabka.TopNotification"/>
+        <activity android:name="pl.zabka.b2c.presentation.popup.PushPointsPopupActivity" android:theme="@style/Theme.Zabka.TopNotification"/>
+        <activity android:launchMode="singleTask" android:name="pl.zabka.b2c.presentation.myprofile.email.confirmation.ActivateEmailConfirmationActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="aplikacja.zabka.pl" android:path="@string/confirm_email_link_prefix" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="pl.zabka.b2c.presentation.myprofile.email.confirmation.ChangeEmailConfirmationActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="aplikacja.zabka.pl" android:path="@string/change_email_link_prefix" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="pl.zabka.b2c.presentation.myprofile.email.EmailSentEditActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="pl.zabka.b2c.presentation.myprofile.email.EmailSentActivateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <service android:name="pl.zabka.b2c.fcm.ZabkaFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="io.fabric.ApiKey" android:value="88ca43838561cc75f9b299e48dbf3040d9053350"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_notification"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/primary"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_api_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.synerise.sdk.injector.ui.walkthrough.WalkthroughActivity" android:theme="@style/SyneriseSDKAppTheme"/>
+        <activity android:name="com.synerise.sdk.injector.ui.push.BannerActivity" android:theme="@style/SyneriseSDKAppTheme"/>
+        <service android:exported="false" android:name="com.synerise.sdk.event.EventService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="true" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="pl.zabka.apb2c.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="pl.zabka.apb2c.lifecycle-trojan" android:exported="false" android:multiprocess="true" android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="pl.zabka.apb2c.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <provider android:authorities="pl.zabka.apb2c.MarketingInitProvider" android:exported="false" android:name="com.facebook.marketing.internal.MarketingInitProvider"/>
+        <provider android:authorities="pl.zabka.apb2c.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

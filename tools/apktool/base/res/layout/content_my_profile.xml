@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.zabka.b2c.widgets.ZabkaSwipeToRefreshLayout android:id="@id/swipeToRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:scrollbarStyle="outsideOverlay" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/spacing_pre_xl" android:paddingEnd="@dimen/spacing_pre_xl" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center" android:id="@id/myProfileLoading" android:paddingTop="@dimen/spacing_xxl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/myProfileContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <pl.zabka.b2c.widgets.ProfileRowItemLayout android:id="@id/myProfileNameRow" app:header="@string/my_profile_name_header" app:hint="@string/my_profile_name_hint" style="@style/Zabka.Widget.MyProfile.RowItem" />
+                <pl.zabka.b2c.widgets.ProfileRowItemLayout android:id="@id/myProfileEmailRow" app:header="@string/my_profile_email_header" app:hint="@string/my_profile_email_hint" style="@style/Zabka.Widget.MyProfile.RowItem" />
+                <pl.zabka.b2c.widgets.ProfileRowItemLayout android:id="@id/myProfilePhoneRow" app:header="@string/my_profile_phone_header" app:hint="@string/my_profile_phone_hint" style="@style/Zabka.Widget.MyProfile.RowItem" />
+                <pl.zabka.b2c.widgets.ProfileRowItemLayout android:id="@id/myProfileGenderRow" app:header="@string/my_profile_gender_header" app:hint="@string/my_profile_gender_hint" style="@style/Zabka.Widget.MyProfile.RowItem" />
+                <pl.zabka.b2c.widgets.ProfileRowItemLayout android:id="@id/myProfileBirthDateRow" app:header="@string/my_profile_birth_date_header" app:hint="@string/my_profile_birth_date_hint" style="@style/Zabka.Widget.MyProfile.RowItem" />
+                <TextView android:id="@id/myProfileDeleteAccountHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xxl" android:text="@string/my_profile_delete_account" style="@style/Zabka.Widget.Text.MyProfile.DeleteAccountHeader" />
+                <TextView android:id="@id/myProfileDeleteAccountDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_pre_xl" android:text="@string/my_profile_delete_account_description" style="@style/Zabka.Widget.Text.MyProfile.DeleteAccountDescription" />
+                <android.support.design.button.MaterialButton android:textSize="18.0sp" android:textColor="@color/error" android:id="@id/myProfileDeleteAccountButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_xxl" android:layout_marginBottom="@dimen/spacing_xxl" android:text="@string/my_profile_delete_account" style="@style/Widget.Zabka.Button.Empty" />
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+</pl.zabka.b2c.widgets.ZabkaSwipeToRefreshLayout>

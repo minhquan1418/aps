@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_lg" app:cardCornerRadius="@dimen/section_radius" app:cardPreventCornerOverlap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout android:id="@id/coverAndActionContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/cover_ripple_gray">
+            <FrameLayout android:id="@id/coverContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/coverImage" android:layout_width="fill_parent" android:layout_height="@dimen/card_cover_image_height" android:scaleType="centerCrop" android:adjustViewBounds="true" android:transitionName="CoverImageTransitionName" />
+                <TextView android:id="@id/coverTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_pre_xl" android:transitionName="CoverTitleTransitionName" style="@style/Widget.Zabka.Card.CoverTitle" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/actionContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/coverContainer">
+                <TextView android:id="@id/actionTitle" android:padding="@dimen/section_title_margin" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:transitionName="ActionTitleTransitionName" style="@style/Widget.Zabka.Card.ActionTitle" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right" android:layout_marginEnd="@dimen/base_screen_margin" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+        <pl.zabka.b2c.widgets.ScrollingIndicatorWithEndlessLoading android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="@dimen/divider" android:layout_marginStart="@dimen/base_screen_margin_lg" app:layout_constraintTop_toBottomOf="@id/coverAndActionContainer" />
+        <android.support.v7.widget.RecyclerView android:orientation="horizontal" android:id="@id/collection" android:padding="@dimen/coupon_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/promotion_item_height" app:layoutManager="android.support.v7.widget.LinearLayoutManager" app:layout_constraintTop_toBottomOf="@id/divider" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

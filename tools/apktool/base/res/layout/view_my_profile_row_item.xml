@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/profileItemHeader" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Zabka.MyProfile.Item.Header" />
+    <TextView android:gravity="end|center" android:id="@id/profileItemValue" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_md" android:layout_marginEnd="@dimen/spacing_md" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/arrowRight" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toEndOf="@id/profileItemHeader" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Zabka.MyProfile.Item.Value" />
+    <ImageView android:id="@id/arrowRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_grey" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" style="@style/Widget.Zabka.Divider.Horizontal" />
+</merge>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout android:id="@id/appBarLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsingLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:titleEnabled="false" style="@style/Widget.Zabka.CollapsingToolbar">
+            <ImageView android:id="@id/coverIv" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:transitionName="CoverImageTransitionName" app:layout_collapseMode="parallax" app:layout_constraintDimensionRatio="1" />
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/titleContainer" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" app:layout_collapseMode="pin">
+                <TextView android:id="@id/titleTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:transitionName="CoverTitleTransitionName" style="@style/Widget.Zabka.Header.White" />
+                <TextView android:id="@id/subtitleTv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:transitionName="ActionTitleTransitionName" style="@style/Widget.Zabka.Cover.Subtitle" />
+            </LinearLayout>
+            <android.support.v7.widget.Toolbar android:theme="@style/Theme.Zabka.Toolbar.Light" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@drawable/ic_header_cross">
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/fixedTopLayout" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/titleCollapsedTv" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" android:alpha="0.0" style="@style/Widget.Zabka.Header.White.Collapsed" />
+                    <android.support.design.chip.Chip android:layout_gravity="center_vertical" android:id="@id/pointsLabel" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_lg" app:chipBackgroundColor="@color/brand_color_dark" style="@style/Widget.Zabka.Chip" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>

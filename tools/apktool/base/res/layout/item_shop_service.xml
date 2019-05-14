@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@id/shopServiceLabel" android:layout_width="@dimen/shop_details_services_stroke_container_size" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/serviceIconStroke" android:background="@drawable/shop_service_circle_background" android:layout_width="@dimen/shop_details_services_stroke_container_size" android:layout_height="@dimen/shop_details_services_stroke_container_size" />
+    <ImageView android:id="@id/serviceIcon" app:layout_constraintBottom_toBottomOf="@id/serviceIconStroke" app:layout_constraintEnd_toEndOf="@id/serviceIconStroke" app:layout_constraintStart_toStartOf="@id/serviceIconStroke" app:layout_constraintTop_toTopOf="@id/serviceIconStroke" style="@style/Widget.Zabka.ShopServiceIcon" />
+    <TextView android:id="@id/serviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_sm" app:layout_constraintEnd_toEndOf="@id/serviceIconStroke" app:layout_constraintStart_toStartOf="@id/serviceIconStroke" app:layout_constraintTop_toBottomOf="@id/serviceIconStroke" style="@style/Widget.Zabka.ShopServiceLabel" />
+</android.support.constraint.ConstraintLayout>

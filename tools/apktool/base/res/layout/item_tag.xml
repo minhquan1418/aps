@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.zabka.b2c.widgets.TagView android:id="@id/tagItem" app:isOnDetails="true" style="@style/Widget.Zabka.Chip.Promotion"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

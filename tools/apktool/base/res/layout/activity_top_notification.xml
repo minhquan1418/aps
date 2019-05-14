@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.zabka.b2c.widgets.swipe.SwipeDismissFrameLayout android:id="@id/swipeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/root" android:background="@color/brand_color" android:padding="@dimen/spacing_lg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/top_notification_icon_size" android:layout_height="@dimen/top_notification_icon_size" />
+        <ImageView android:theme="@style/Theme.Zabka.Toolbar.Light" android:id="@id/closeButton" android:padding="6.0dip" android:layout_width="@dimen/top_notification_icon_size" android:layout_height="@dimen/top_notification_icon_size" android:src="@drawable/ic_header_cross" app:layout_constraintEnd_toEndOf="parent" />
+        <TextView android:id="@id/titleTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/spacing_pre_xl" app:layout_constraintBottom_toBottomOf="@id/icon" app:layout_constraintEnd_toStartOf="@id/closeButton" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="@id/icon" style="@style/Zabka.Widget.TopNotification.Title" />
+        <TextView android:id="@id/contentTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_sm" app:layout_constraintEnd_toStartOf="@id/closeButton" app:layout_constraintStart_toStartOf="@id/titleTv" app:layout_constraintTop_toBottomOf="@id/titleTv" style="@style/Zabka.Widget.TopNotification.Content" />
+    </android.support.constraint.ConstraintLayout>
+</pl.zabka.b2c.widgets.swipe.SwipeDismissFrameLayout>

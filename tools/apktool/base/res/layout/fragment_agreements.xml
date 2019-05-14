@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:padding="@dimen/base_screen_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.AppCompatCheckBox android:gravity="center_vertical" android:id="@id/agreement1" android:paddingTop="@dimen/spacing_xsm" android:paddingBottom="@dimen/spacing_xsm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/registration_agreement1" style="@style/Widget.Zabka.Checkbox" />
+        <android.support.v7.widget.AppCompatCheckBox android:gravity="center_vertical" android:id="@id/agreement2" android:paddingTop="@dimen/spacing_xsm" android:paddingBottom="@dimen/spacing_xsm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_sm" android:text="@string/registration_agreement2" style="@style/Widget.Zabka.Checkbox" />
+        <android.support.v7.widget.AppCompatCheckBox android:gravity="center_vertical" android:id="@id/agreement3" android:paddingTop="@dimen/spacing_xsm" android:paddingBottom="@dimen/spacing_xsm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_sm" android:text="@string/registration_agreement3" style="@style/Widget.Zabka.Checkbox" />
+    </LinearLayout>
+</FrameLayout>

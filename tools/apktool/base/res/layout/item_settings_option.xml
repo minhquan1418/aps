@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/cover_ripple_gray" android:paddingStart="@dimen/base_screen_margin_lg" android:paddingEnd="@dimen/base_screen_margin_lg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/title" android:paddingTop="@dimen/spacing_lg" android:paddingBottom="@dimen/spacing_lg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_pre_xl" app:layout_constraintEnd_toStartOf="@id/icon" app:layout_constraintStart_toStartOf="parent" style="@style/Zabka.Widget.Settings.Label" />
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_grey" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="@dimen/divider" app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

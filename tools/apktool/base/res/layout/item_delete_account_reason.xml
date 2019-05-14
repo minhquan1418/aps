@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/cover_ripple_gray" android:paddingStart="@dimen/base_screen_margin_lg" android:paddingEnd="@dimen/base_screen_margin_lg"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/reasonDescription" android:paddingTop="@dimen/spacing_lg" android:paddingBottom="@dimen/spacing_lg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/spacing_pre_xl" app:fontFamily="@font/tt_commons_regular" style="@style/Zabka.Widget.Settings.Label" />
+    <View android:layout_gravity="bottom" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="@dimen/divider" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_right_grey" />
+</FrameLayout>

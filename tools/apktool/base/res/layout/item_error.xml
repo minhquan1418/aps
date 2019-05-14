@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/spacing_lg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/error_mark_background" android:layout_width="45.0dip" android:layout_height="45.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@drawable/ic_error_large" android:scaleType="center" android:tint="@color/text_primary_light" />
+    </FrameLayout>
+    <TextView android:textColor="@color/error" android:id="@id/errorTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_md" android:text="@string/error_something_went_wrong" style="@style/Widget.Zabka.Header.White" />
+    <TextView android:textSize="@dimen/description_text_size" android:textColor="@color/text_primary" android:gravity="center" android:id="@id/errorContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_sm" android:text="@string/error_unable_load_data_pull_to_refresh" app:fontFamily="@font/tt_commons_light" />
+</LinearLayout>

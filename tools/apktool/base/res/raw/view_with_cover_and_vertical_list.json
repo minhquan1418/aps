@@ -1,0 +1,27 @@
+{
+  "schema": "viewWithCoverAndVerticalList",
+  "uuid": "F47309B3-913D-4C0B-A608-9D14158CA3C9",
+  "slug": "coupons",
+  "content": {
+    "cover": {
+      "title": "Coupons",
+      "titleColor": "#FFFFFF",
+      "subtitle": "Redeem coupons for your points",
+      "subtitleColor": "#FFFFFF",
+      "backgroundColor": "#333333",
+      "displayPoints": true
+    },
+    "verticalList": {
+      "schema": "collection",
+      "uuid": "F47309B3-913D-4C0B-A608-9D14158CA3C9",
+      "slug": "coupon-categories",
+      "content": {
+        "collectionType": "verticalList",
+        "ref": {
+          "uri": "/collection/lists/coupon-categories",
+          "childSchema": "cardWithCoverAndHorizontalList"
+        }
+      }
+    }
+  }
+}

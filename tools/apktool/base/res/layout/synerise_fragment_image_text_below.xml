@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" android:layout_weight="4.0" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5" />
+        <ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/header" android:padding="@dimen/synerise_space_small" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SyneriseSDKTextPrimary.Huge.Centered" />
+                <TextView android:id="@id/description" android:padding="@dimen/synerise_space_small" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SyneriseSDKTextPrimary.Large.Centered" />
+            </LinearLayout>
+        </ScrollView>
+        <Button android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/synerise_space_content" />
+        <include layout="@layout/synerise_include_indicator_space" />
+    </LinearLayout>
+    <include layout="@layout/synerise_include_button_close" />
+</FrameLayout>
