@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:shape="oval"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <size android:height="@dimen/shops_map_bar_icons_size" android:width="@dimen/shops_map_bar_icons_size" />
-    <solid android:color="@color/brand_color_dark" />
-</shape>

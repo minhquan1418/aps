@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<pl.zabka.b2c.widgets.CouponItemLayout android:layout_gravity="center" android:id="@id/couponContainer" android:background="@drawable/coupon_item_inactive_background" android:layout_width="@dimen/coupon_card_width" android:layout_height="@dimen/promotion_item_height" android:foreground="@drawable/cover_ripple_gray_coupon_item"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

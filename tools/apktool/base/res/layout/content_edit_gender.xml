@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RadioButton android:id="@id/genderMaleSelector" android:text="@string/gender_male" style="@style/Widget.Zabka.RadioButton" />
-    <View android:layout_width="fill_parent" style="@style/Widget.Zabka.Divider.Horizontal" />
-    <RadioButton android:id="@id/genderFemaleSelector" android:text="@string/gender_female" style="@style/Widget.Zabka.RadioButton" />
-    <View android:layout_width="fill_parent" style="@style/Widget.Zabka.Divider.Horizontal" />
-    <RadioButton android:id="@id/genderNotSpecifiedSelector" android:text="@string/gender_not_specified" style="@style/Widget.Zabka.RadioButton" />
-</RadioGroup>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageButton android:enabled="false" android:id="@id/decrementCounter" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:foreground="@drawable/cover_ripple_circular_gray" android:src="@drawable/coupon_counter_minus_button" />
-    <TextView android:textSize="24.0sp" android:textColor="@color/text_primary_brand_dark" android:gravity="center" android:layout_gravity="center" android:id="@id/counterLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:minWidth="@dimen/spacing_lg" android:layout_marginStart="@dimen/spacing_md" android:layout_marginEnd="@dimen/spacing_md" app:fontFamily="@font/tt_commons_semi_bold" />
-    <ImageButton android:enabled="false" android:id="@id/incrementCounter" android:background="@android:color/transparent" android:focusable="true" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:foreground="@drawable/cover_ripple_circular_gray" android:src="@drawable/coupon_counter_plus_button" />
-</merge>

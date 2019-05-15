@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:synerise="http://schemas.android.com/apk/res-auto">
-    <com.synerise.sdk.injector.ui.walkthrough.InfiniteLoopViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <com.synerise.sdk.injector.ui.walkthrough.indicators.IndicatorsLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/indicators" android:layout_width="fill_parent" android:layout_height="@dimen/synerise_pager_indicator_height" synerise:active_color="@color/syneriseWhite" synerise:inactive_color="@color/syneriseTranslucent" synerise:size="@dimen/synerise_space_small" />
-</FrameLayout>

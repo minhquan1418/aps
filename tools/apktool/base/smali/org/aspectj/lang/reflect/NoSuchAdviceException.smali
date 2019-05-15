@@ -1,7 +1,0 @@
-.class public Lorg/aspectj/lang/reflect/NoSuchAdviceException;
-.super Ljava/lang/Exception;
-.source "NoSuchAdviceException.java"
-
-
-# static fields
-.field private static final serialVersionUID:J = 0x2d31373336313830L
