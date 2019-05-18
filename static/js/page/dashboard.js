@@ -15,6 +15,9 @@ function chooseMethod(metd) {
     }
 }
 
+/**
+ * xu ly khi nhan nut ket noi voi dien thoai
+ */
 function doConect() {
     // phuong thuc dung de connect
     var metd = document.getElementById("btnMethod").innerHTML;
@@ -42,12 +45,29 @@ function doConect() {
                 // thanh cong thi hien thi message va div thong tin co ban
                 document.getElementById("divConnectSuccess").style.display = "block";
                 document.getElementById("divPhoneInfo").style.display = "block";
+
+                // hien thi thong tin co ban cua dien thoai
+                var ul = document.getElementById("phoneInfo");
+                addPhoneInfo(ul, "OS version: " + result.phoneInfo[0]);
+                addPhoneInfo(ul, "SDK version: " + result.phoneInfo[1]);
+                addPhoneInfo(ul, "Serial no: " + result.phoneInfo[2]);
+                addPhoneInfo(ul, "Brand: " + result.phoneInfo[3]);
+                addPhoneInfo(ul, "Phone name: " + result.phoneInfo[4]);
             }
             console.log(result);
         }
     };
     xhttp.open("GET", url, true);
     xhttp.send();
+}
+
+/**
+ * thong tin dien thoai
+ */
+function addPhoneInfo(ul, info) {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(info));
+    ul.appendChild(li);
 }
 
 function scan() {

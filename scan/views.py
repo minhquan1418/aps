@@ -24,16 +24,21 @@ def connect(request):
     ip = request.GET['ip']
     # ket qua ket noi
     isSuccess = True
+    # thong tin dien thoai
+    phoneInfos = None
 
     if method == 'IP':
         output_lines = subprocess.check_output(["sh", "tools/connect_to_device/connect_ip.sh", ip])
-        result = output_lines.splitlines()[-1]
-        if result == "1":
-            isSuccess = True
-        else:
-            isSuccess = False
     else:
         debug = 'usb connect'
 
-    data = {'success': isSuccess, 'debug': result}
+    connectResult = output_lines.splitlines()[-1]
+    if connectResult == "1":
+        isSuccess = True
+        phoneInfos = subprocess.check_output(["sh", "tools/summary/phone_info.sh"])
+        phoneInfos = phoneInfos.splitlines()
+    else:
+        isSuccess = False
+
+    data = {'success': isSuccess, 'phoneInfo': phoneInfos, 'debug': [1, 2, 3]}
     return JsonResponse(data)
