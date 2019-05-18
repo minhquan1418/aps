@@ -47,12 +47,12 @@ function doConect() {
                 document.getElementById("divPhoneInfo").style.display = "block";
 
                 // hien thi thong tin co ban cua dien thoai
-                var ul = document.getElementById("phoneInfo");
-                addPhoneInfo(ul, "OS version: " + result.phoneInfo[0]);
-                addPhoneInfo(ul, "SDK version: " + result.phoneInfo[1]);
-                addPhoneInfo(ul, "Serial no: " + result.phoneInfo[2]);
-                addPhoneInfo(ul, "Brand: " + result.phoneInfo[3]);
-                addPhoneInfo(ul, "Phone name: " + result.phoneInfo[4]);
+                var liInfos = document.getElementById("phoneInfo").children;
+                liInfos[0].innerHTML = "OS version: " + result.phoneInfo[0];
+                liInfos[1].innerHTML = "SDK version: " + result.phoneInfo[1];
+                liInfos[2].innerHTML = "Serial no: " + result.phoneInfo[2];
+                liInfos[3].innerHTML = "Brand: " + result.phoneInfo[3];
+                liInfos[4].innerHTML = "Phone name: " + result.phoneInfo[4];
             }
             console.log(result);
         }
@@ -70,17 +70,20 @@ function addPhoneInfo(ul, info) {
     ul.appendChild(li);
 }
 
+/**
+ * xu ly khi nhan nut scan
+ */
 function scan() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             // JSON tra ve
             var result = JSON.parse(this.responseText);
-
+            console.log(result);
             // hien thi div report
             document.getElementById("divReport").style.display = "block";
         }
     };
-    xhttp.open("GET", "scan/", true);
+    xhttp.open("GET", "scan", true);
     xhttp.send();
 }
