@@ -1,16 +1,16 @@
 #!/bin/sh
 
-dex2jar=tools/dex2jar/d2j-dex2jar.sh
+dex2jar=../tools/dex2jar/d2j-dex2jar.sh
 dir_file=outdir/file
-add_procyon=tools/procyon-decompiler.jar
+add_procyon=../tools/procyon-decompiler.jar
 dir_source=outdir/source
-owasp_check=tools/dependency-check/bin/dependency-check.sh
+owasp_check=../tools/dependency-check/bin/dependency-check.sh
 dir_report=outdir/report
 
 # The command pull file apk so that analysis
 mkdir $dir_file/$1
 
-tools/adb pull /data/app/"$1"/base.apk $dir_file/$1
+../tools/adb pull /data/app/"$1"/base.apk $dir_file/$1
 
 return 0
 # Command excute 2 tool dex2jar and owasp_check

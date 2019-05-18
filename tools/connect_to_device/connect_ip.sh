@@ -2,12 +2,12 @@
 
 IP=$1
 {
-    tools/adb disconnect
-    tools/adb connect $IP
+   ../tools/adb disconnect
+   ../tools/adb connect $IP
 } 1>/dev/null 2>&1
 
 # that bai: unknown, thanh cong device
-RESULT=$(tools/adb get-state)
+RESULT=$(../tools/adb get-state)
 
 if [ "$RESULT" = "device" ]
 then
