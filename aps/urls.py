@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^about/', include('about.urls')),
     url(r'^dashboard/', include('dashboard.urls')),
     url(r'^scan/', include('scan.urls')),
+    url(r'^report/', include('report.urls')),
     url(r'^', include('dashboard.urls'))
 ]
