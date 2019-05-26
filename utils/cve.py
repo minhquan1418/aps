@@ -1,7 +1,7 @@
 class Cve:
-    def __init__(self, fileName, cveId, severity, score, description):
+    def __init__(self, fileName, name, severity, cvssScore, description):
         self.fileName = fileName
-        self.cveId = cveId
+        self.name = name
         self.severity = severity
-        self.score = score
+        self.cvssScore = cvssScore
         self.description = description
