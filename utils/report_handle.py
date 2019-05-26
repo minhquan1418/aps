@@ -1,8 +1,8 @@
 import json
-from cve import Cve
+from report_data import DpReport
 
 
-def dependency_check_report(list_cve, app_name):
+def handle_dp_report(dp_reports, app_name):
     file_handle = open('outdir/report/' + app_name +'/dependency-check-report.json')
     data = json.load(file_handle)
 
@@ -17,6 +17,6 @@ def dependency_check_report(list_cve, app_name):
                 severity = str(vulnerability["severity"])
                 cvssScore = str(vulnerability["cvssScore"])
                 description = str(vulnerability["description"])
-                list_cve.append(Cve(fileName, name, severity, cvssScore, description))
+                dp_reports.append(DpReport(fileName, name, severity, cvssScore, description).serialize())
         except:
             pass

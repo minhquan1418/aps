@@ -34,7 +34,7 @@
             <div class="box-body">
                 <div class="box-group" id="accordion">
 
-                    {% for cve in list_cve %}
+                    {% for dp_report in dp_reports %}
                         <div class="panel box box-primary">
                             <div class="box-header">
                                 <h4 class="box-title">
@@ -44,11 +44,11 @@
                             <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="box-body">
                                     <dl>
-                                        <dt>CVE ID: {{ cve.cveId }}</dt>                                    
-                                        <dt>Severity: {{ cve.severity }}</dt>
-                                        <dt>Score: {{ cve.score }}</dt>
+                                        <dt>CVE ID: {{ dp_report.name }}</dt>                                    
+                                        <dt>Severity: {{ dp_report.severity }}</dt>
+                                        <dt>Score: {{ dp_report.cvssScore }}</dt>
                                         <dt>Description:</dt>
-                                        <dd>{{ cve.description }}</dd>
+                                        <dd>{{ dp_report.description }}</dd>
                                     </dl>
                                 </div>
                             </div>

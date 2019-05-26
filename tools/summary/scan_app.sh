@@ -7,8 +7,4 @@
 # awk '!/com.android./' $outdir/data_data.txt > tmp && mv tmp $outdir/data_data.txt
 
 # chuyen dinh danh file txt ve giong dinh danh Unix
-sed -i -e 's/\r$//' outdir/scan_file/data_app.txt
-
-while read -r package_name; do
-    tools/summary/run-tool.sh $package_name
-done < outdir/scan_file/data_app.txt
+#sed -i -e 's/\r$//' outdir/scan_file/data_app.txt

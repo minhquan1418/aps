@@ -18,7 +18,7 @@ qark --apk $dir_file/$1/$1 --build-path $dir_source/$1 --report-type json
 
 # dependency-check
 pn=$(echo "$1" | sed -e "s/.apk$//")
-$owasp_check --project Check_Security --out $dir_report/$1 --scan $dir_source/$1/qark/"$pn.jar" -n -f JSON 
+$owasp_check --project Check_Security --out $dir_report/$1 --scan $dir_source/$1/qark/"$pn.jar" -n -f JSON
 
 # using sniffgit so that find sensitive infomation in source code
 mkdir $dir_source/$1

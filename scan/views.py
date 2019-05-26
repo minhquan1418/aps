@@ -1,10 +1,31 @@
 from django.http import HttpResponse
 from django.http import JsonResponse
 import subprocess
+import utils.report_handle as report_handle
 
 def scan(request):
-    debug = subprocess.check_output(["sh", "tools/summary/scan_app.sh"])
-    data = {'debug': debug}
+    # 1. lay danh sach cac app
+    subprocess.check_output(["sh", "tools/summary/scan_app.sh"])
+    apps = open("outdir/scan_file/data_app.txt", "r")
+
+    dp_reports = []
+    # 2. loop qua tung app
+    for app in apps:
+        app = app.rstrip()
+        # 3 thuc hien scan
+        try:
+            subprocess.check_output(["sh", "tools/summary/run_tool.sh", app])
+        except Exception:
+            pass
+        # 4 xu ly report
+        # 4.1 dependency check
+        report_handle.handle_dp_report(dp_reports, app)
+        # 5 xoa resource
+
+    # 6. luu session
+    request.session['dp_reports'] = dp_reports
+
+    data = {'debug': dp_reports}
     return JsonResponse(data)
 
 def connect(request):
