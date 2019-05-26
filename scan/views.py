@@ -9,6 +9,7 @@ def scan(request):
     apps = open("outdir/scan_file/data_app.txt", "r")
 
     dp_reports = []
+    qark_reports = []
     # 2. loop qua tung app
     for app in apps:
         app = app.rstrip()
@@ -20,12 +21,15 @@ def scan(request):
         # 4 xu ly report
         # 4.1 dependency check
         report_handle.handle_dp_report(dp_reports, app)
+        # 4.2 qark
+        report_handle.handle_qark_report(qark_reports)
+        reports = {app : {'dp_reports' : dp_reports, 'qark_reports' : qark_reports}}
         # 5 xoa resource
 
     # 6. luu session
-    request.session['dp_reports'] = dp_reports
+    request.session['reports'] = reports
 
-    data = {'debug': dp_reports}
+    data = {'debug': reports}
     return JsonResponse(data)
 
 def connect(request):
